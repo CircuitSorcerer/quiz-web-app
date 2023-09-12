@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    color: black;
+    
+}
+
+.container {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 
+}
+
+main {
+    border: 2px solid white;
+    
+    width: 60%;
+    height: 60%;
+}
