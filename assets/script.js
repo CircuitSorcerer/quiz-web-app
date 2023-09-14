@@ -36,8 +36,9 @@ const questions = [
 
 var gameEl = document.createElement("div");
 var questionEl = document.createElement("h3");
-var messageEl = document.createElement("h2")
-var wrapperEl = document.getElementById("container")
+var messageEl = document.createElement("h2");
+var messageEl2 = document.createElement("h3");
+var wrapperEl = document.getElementById("container");
 var points = 0;
 var obj = 0;
 
@@ -96,12 +97,14 @@ gameEl.addEventListener("click", function(event) {
         console.log("correct");
         questionEl.remove();
         //buttonEl.remove();
-        questionSelector();
         points += 5;
         if (obj == questions.length-1) {
             mainEl.style.display = "none";
-            wrapperEl.appendChild(messageEl)
-            messageEl.textContent = "YOU WIN!"
+            wrapperEl.appendChild(messageEl);
+            wrapperEl.appendChild(messageEl2);
+            messageEl.textContent = "YOU WIN!";
+            messageEl2.textContent = points + " points";
+            clearInterval();
         } else {
             questionSelector();
         }
