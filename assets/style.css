@@ -15,7 +15,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 
+    margin: 50px; 
 }
 
 main {
@@ -23,4 +23,22 @@ main {
     
     width: 60%;
     height: 60%;
+}
+
+button {
+    background-color: white;
+    color:black;
+    height: 30px;
+    width: 100px;
+    border: none;
+    padding: 0;
+    margin: 5px;
+    cursor: pointer;
+    font-family: inherit;
+    box-shadow: none;
+}
+
+button:hover {
+    background-color: red;
+    color: white;
 }
