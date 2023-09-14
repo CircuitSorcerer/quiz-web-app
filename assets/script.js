@@ -104,7 +104,7 @@ gameEl.addEventListener("click", function(event) {
             wrapperEl.appendChild(messageEl2);
             messageEl.textContent = "YOU WIN!";
             messageEl2.textContent = points + " points";
-            clearInterval();
+            
         } else {
             questionSelector();
         }
